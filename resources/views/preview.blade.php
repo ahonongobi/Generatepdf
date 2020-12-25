@@ -4,7 +4,7 @@
 
 <head>
 
-    <title>Generate PDF Laravel 8 - NiceSnippets.com</title>
+    <title>Je suis Developer full-stack, disposant des qualités  pour pourvoir satisfaire  vos besoins. </title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
