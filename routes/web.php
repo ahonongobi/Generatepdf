@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PDFController;
-
+use App\Http\Controllers\GenerateInputPDFController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +20,9 @@ Route::get('/', function () {
 });
 
 
-
+Route::get('pdf/preview-input', [PDFController::class, 'preview_input'])->name('pdf.previewinput');
+Route::post('pdf/preview-inputs',[GenerateInputPDFController::class,'preview2'])->name('preview-input');
 Route::get('pdf/preview', [PDFController::class, 'preview'])->name('pdf.preview');
 
 Route::get('pdf/generate', [PDFController::class, 'generatePDF'])->name('pdf.generate');
+Route::get('pdf/generate-2/{email}/{pays}/{ville}/{numero}',[GenerateInputPDFController::class,'generate']);

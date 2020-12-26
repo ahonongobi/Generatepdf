@@ -15,6 +15,11 @@ class PDFController extends Controller
 
     // function to display preview
 
+      
+     public function preview_input(){
+
+         return view('preview2');
+     }
     public function preview()
 
     {
